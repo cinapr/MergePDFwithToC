@@ -1,4 +1,7 @@
-[1] TITLE 1
-[2] TITLE 2
-[3] TITLE 3
-[4] TITLE 4
+[1] Cindy Aprilia. “Prototyping an ethical issue decision support tool for user story analysis”. Diss. de mestr. Lappeenranta University of Technology, Chalmers University of Technology, e Furtwangen University, 2024. url: https://lutpub.lut.fi/handle/10024/168082
+[2] Cindy Aprilia. “Narrative Literature Review : The Role of Ethics in Business Information”. Em: Data Science: Journal of Computing and Applied Informatics 8.2 (jul. de 2024), pp. 96–105. doi: 10.32734/jocai.v8.i2- 15855. url: https://talenta.usu.ac.id/JoCAI/article/view/15855
+[3] Cindy Aprilia et al. “Exploring Stakeholder Relationships in Technology Adoption as Strategic Innovation: Narrative Literature Review”. Em: Proceedings of the 2024 8th International Conference on Applied Economics and Business. In publication process. Springer, 2024
+[4] Cindy Aprilia et al. “An Empirical Study on the Energy Efficiency of Collaborative Software”. In publication process
+[5] Seniman et al. Data Communication and Computer Networks (Practical) Handbook. internal use of Technology Information Department, Universitas Sumatera Utara. Medan: Percetakan Bumibaru, 2016
+[6] Opim Salim Sitompul et al. Fundamentals of Artificial Intelligence with Prolog (Second Revision). internal use of Technology Information Department, Universitas Sumatera Utara. Medan: USU Press, 2017. isbn: 979-458-960-8
+[7] Baihaqi Siregar et al. “Klasifikasi Kecerdasan Majemuk pada Anak Berdasarkan Posting Aktivitas di Media Sosial Menggunakan SentiStrength dan Spearman’s Rank Correlation Coefficient (Classification of Multiple Intelligences in Children Based on Posting Activities on Social Media Using Sentistrength and Spearman’s Rank Correlation Coefficient)”. Em: Jurnal Media Informatika Budidarma 3.4 (2019), pp. 357–365
