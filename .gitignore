@@ -205,3 +205,10 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# TXT
+custom_titles.txt
+
+#FILE
+qwinsi_jh-pdf-merger-v1.0.0-windows-portable-x86_64.zip
