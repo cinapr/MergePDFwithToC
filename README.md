@@ -1,6 +1,8 @@
 # MergePDFwithToC
 Merge PDF with Table of Contents
 
+Cover can be added priof to Table of Contents if using ```nonbookmarkedpdf.py```
+
 ## Installation
 
 1. Install [JH PDF Merger by qwinsi](https://github.com/qwinsi/jh-pdf-merger)
