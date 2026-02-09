@@ -35,6 +35,7 @@ custom_titles.txt is optional. If you don't give it the ToC will generated exact
 
 2. Filled the ```custom_titles.txt``` with the title of sections that you want to put on Table of Contents.
 The line should represent : ```[SECTION INDENT] [TITLE] | PAGE [PAGE NO]```
+
 Example :
 ```
 [1] TITLE 1 | PAGE 1
