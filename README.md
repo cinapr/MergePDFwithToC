@@ -26,7 +26,7 @@ TITLE 2
 TITLE 3
 ```
 
-4. Run : ```python bookmarkedpdf.py input.pdf output.pdf custom_titles.txt [cover.pdf (optional)]```
+4. Run : ```python bookmarkedpdf.py input.pdf output.pdf custom_titles.txt```
 custom_titles.txt is optional. If you don't give it the ToC will generated exactly the same with bookmark title.
 
 
