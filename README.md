@@ -1,7 +1,7 @@
 # MergePDFwithToC
 Merge PDF with Table of Contents
 
-Cover can be added priof to Table of Contents if using ```nonbookmarkedpdf.py```
+Cover can be added prior to the generated Table of Contents if using ```nonbookmarkedpdf.py```
 
 ## Installation
 
