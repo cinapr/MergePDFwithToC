@@ -26,7 +26,7 @@ TITLE 2
 TITLE 3
 ```
 
-4. Run : ```python bookmarkedpdf.py input.pdf output.pdf custom_titles.txt```
+4. Run : ```python bookmarkedpdf.py input.pdf output.pdf custom_titles.txt [cover.pdf (optional)]```
 custom_titles.txt is optional. If you don't give it the ToC will generated exactly the same with bookmark title.
 
 
@@ -34,17 +34,17 @@ custom_titles.txt is optional. If you don't give it the ToC will generated exact
 1. Prepared PDF in the same folder with ```nonbookmarkedpdf.py``` and ```custom_titles.txt```
 
 2. Filled the ```custom_titles.txt``` with the title of sections that you want to put on Table of Contents.
-The line should represent : ```[SECTION INDENT] [TITLE] | Page [PAGE NO]```
+The line should represent : ```[SECTION INDENT] [TITLE] | PAGE [PAGE NO]```
 Example :
 ```
-[1] TITLE 1 | Page 1
-[2] TITLE 1.1 | Page 3
-[2] TITLE 1.2 | Page 4
-[3] TITLE 1.2.1 | Page 4
-[3] TITLE 1.2.2 | Page 5
-[3] TITLE 1.2.3 | Page 6
-[1] TITLE 2 | Page 8
-[1] TITLE 3 | Page 10
+[1] TITLE 1 | PAGE 1
+[2] TITLE 1.1 | PAGE 3
+[2] TITLE 1.2 | PAGE 4
+[3] TITLE 1.2.1 | PAGE 4
+[3] TITLE 1.2.2 | PAGE 5
+[3] TITLE 1.2.3 | PAGE 6
+[1] TITLE 2 | PAGE 8
+[1] TITLE 3 | PAGE 10
 ```
 
-3. Run : ```python nonbookmarkedpdf.py input.pdf output.pdf custom_titles.txt```
+3. Run : ```python nonbookmarkedpdf.py input.pdf output.pdf custom_titles.txt [cover.pdf (optional)]```
