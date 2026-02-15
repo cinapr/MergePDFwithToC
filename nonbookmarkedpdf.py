@@ -92,7 +92,7 @@ def estimate_toc_pages(toc_data):
 # Generate TOC pages (ONLY PAGE MATH CHANGED)
 # -------------------------------------------------
 
-def generate_toc_pages(doc, toc_data, insert_at, cover_pages, toc_pages):
+def generate_toc_pages(doc, toc_data, insert_at, cover_pages):
     font_size = 11
     line_spacing = 1.4 * font_size
     max_width = 420
@@ -100,12 +100,18 @@ def generate_toc_pages(doc, toc_data, insert_at, cover_pages, toc_pages):
     page_margin_left = 72
     max_y = 800
 
+    # First estimate how many TOC pages are needed
+    toc_pages = estimate_toc_pages(toc_data)
+
+    # Insert blank TOC pages first (this stabilizes page indices)
+    for i in range(toc_pages):
+        doc.new_page(pno=insert_at + i)
+
     page_offset = cover_pages + toc_pages
 
     page_index = insert_at
     y = page_margin_top + 30
-
-    page = doc.new_page(pno=page_index)
+    page = doc[page_index]
 
     page.insert_text(
         (page_margin_left, page_margin_top),
@@ -118,17 +124,8 @@ def generate_toc_pages(doc, toc_data, insert_at, cover_pages, toc_pages):
     for level, title, txt_page in toc_data:
         indent = (level - 1) * 20
 
-        # TXT page is 1-based
         display_page = txt_page + page_offset
         link_page = (txt_page - 1) + page_offset
-
-        if link_page < 0 or link_page >= doc.page_count:
-            raise ValueError(
-                f"TOC link out of range:\n"
-                f"Title: {title}\n"
-                f"PAGE {txt_page} -> final page {link_page}\n"
-                f"Document has {doc.page_count} pages"
-            )
 
         wrapped = wrap_text(title, max_width - indent, "helv", font_size)
 
@@ -166,8 +163,9 @@ def generate_toc_pages(doc, toc_data, insert_at, cover_pages, toc_pages):
 
             if y > max_y:
                 page_index += 1
-                page = doc.new_page(pno=page_index)
+                page = doc[page_index]
                 y = page_margin_top
+
 
 
 # -------------------------------------------------
@@ -196,14 +194,12 @@ def add_custom_toc(input_pdf, output_pdf, toc_txt, cover_pdf=None):
     toc_data = parse_toc_txt(toc_txt)
 
     cover_pages = add_cover_if_any(doc, cover_pdf)
-    toc_pages = estimate_toc_pages(toc_data)
 
     generate_toc_pages(
         doc,
         toc_data,
         insert_at=cover_pages,
         cover_pages=cover_pages,
-        toc_pages=toc_pages,
     )
 
     doc.save(output_pdf)
