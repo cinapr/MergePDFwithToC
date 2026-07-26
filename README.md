@@ -11,7 +11,7 @@ Cover can be added prior to the generated Table of Contents if using ```nonbookm
 
 
 ## How to Use (For Bookmark PDF)
-1. Merge PDFs with [JH PDF Merger by qwinsi](https://github.com/qwinsi/jh-pdf-merger). Don't forget to click generate bookmark when merging, so the generated PDF will have proper bookmark
+1. Merge PDFs using offline tool [JH PDF Merger by qwinsi](https://github.com/qwinsi/jh-pdf-merger) or using online tool [PDF24 Merge PDF](https://tools.pdf24.org/en/merge-pdf). Don't forget to click generate bookmark when merging, so the generated PDF will have proper bookmark
 
 2. Put the generated bookmark in same folder with ```bookmarkedpdf.py``` and ```custom_titles.txt``` (optional)
 
