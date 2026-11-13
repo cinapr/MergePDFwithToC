@@ -1,4 +1,5 @@
 import fitz  # PyMuPDF
+import argparse
 
 def wrap_text(title, max_width, fontname, fontsize):
     words = title.split()
@@ -70,7 +71,30 @@ def add_toc_to_pdf(input_pdf, output_pdf):
     doc.save(output_pdf)
 
 # === MAIN ===
-input_pdf = "input.pdf"
-output_pdf = "output_with_wrapped_clickable_toc.pdf"
-add_toc_to_pdf(input_pdf, output_pdf)
-print(f"✅ TOC page added with wrapping + accurate clickable links!\n→ {output_pdf}")
+if __name__ == "__main__":
+    # input_pdf = "input.pdf"
+    # output_pdf = "output_with_wrapped_clickable_toc.pdf"
+    parser = argparse.ArgumentParser(
+        description="Add a wrapped, clickable Table of Contents to a PDF."
+    )
+
+    parser.add_argument(
+        "input_pdf",
+        help="Path to the input PDF file"
+    )
+
+    parser.add_argument(
+        "output_pdf",
+        help="Path for the generated PDF file"
+    )
+
+    args = parser.parse_args()
+
+    add_toc_to_pdf(args.input_pdf, args.output_pdf)
+
+    print(
+        f"✅ TOC page added with wrapping + accurate clickable links!\n"
+        f"→ {args.output_pdf}"
+    )
+
+    
